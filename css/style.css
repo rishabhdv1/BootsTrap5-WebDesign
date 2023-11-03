@@ -1,0 +1,55 @@
+body{
+    background: #F3F3F3;
+    background-image: url("../img/Group\ 495.svg") , url("../img/refrence/background.png");
+    background-repeat: no-repeat;
+    background-position: 50px 600px , left top;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff !important;
+}
+.r_tbdr{
+    border: 1px dashed red;
+}
+header{
+    height: 130px;
+}
+.active{
+    background: #573a70;
+}
+main{
+    height: 720px;
+}
+footer{
+    height: 320px;
+}
+.r_header_nav > li > a{
+    padding: 61px 32px 20px 32px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.r_header_nav > li > a:hover{
+    background: #573a70;
+}
+.r_circle{
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    background: #744C97;
+}
+.r_userlink{
+    padding-right: 0px;
+}
+.r_header_nav > li:last-child > a{
+    color: #e8c8ed !important;
+}
+footer *{
+    color: #414062 !important;
+    font-family: 'Nunito', sans-serif;
+}
+footer h3{
+    font-family: 'NunitoBold', sans-serif;
+}
