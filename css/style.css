@@ -1,7 +1,8 @@
 body{
     background: #F3F3F3;
-    background-image: url("../img/Group\ 495.svg") , url("../img/refrence/background.png");
+    background-image: url("../img/Group495.svg") , url("../img/refrence/background.png");
     background-repeat: no-repeat;
+    background-size: 15%, 100%;
     background-position: 50px 600px , left top;
 }
 ul{
@@ -11,9 +12,9 @@ a{
     text-decoration: none;
     color: #fff !important;
 }
-.r_tbdr{
+/* .r_tbdr{
     border: 1px dashed red;
-}
+} */
 header{
     height: 130px;
 }
@@ -21,7 +22,7 @@ header{
     background: #573a70;
 }
 main{
-    height: 720px;
+    min-height: 700px;
 }
 footer{
     height: 320px;
