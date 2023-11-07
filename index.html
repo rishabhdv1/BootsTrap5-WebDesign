@@ -13,62 +13,104 @@
         <title>BootsTrap5 WebDesigns</title>
     </head>
     <style>
-        .r_panel{
-            height: 220px;
-            background: #424D83;
+
+        
+        .flt_end{
+            justify-content: end;
         }
-        .r_panel:hover{
-            height: 445px;
-            background: #798ce7;
-            cursor: pointer;
-        }
-        .r_panel:hover .r_panel_c{
+        .flt_end > ul >li:last-child:hover .r_log{
             display: block;
-            opacity: 1;
-            visibility: visible;
         }
-        .r_panel_c{
-            transition: all .2s linear;
-            height: 252px;
-            background: #5264bb;
+        .r_log{
+            width: 90%;
+            background: #fff;
+            top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            position: relative;
             display: none;
-            opacity: 0;
-            visibility: hidden;
         }
+        .d1{
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: -9px;
+            width: 0;
+            height: 0;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            border-bottom: 10px solid #fff;
+        }
+        .r_log > li{
+            border-bottom: 1px solid #f1f1f3;
+        }
+        .r_log a{
+            color: #4D565C;
+        }
+        
+        
     </style>
     <body>
-        <div class="container-fluid p-0 r_cont r_tbdr ps-5 pe-5">
-            <header class="ps-5 pe-5 r_tbdr">
-                <a href="#" class="float-start mt-5">
-                    <img class="img-fluid" src="./img/Ideal-logo-07.png" alt="">
-                </a>
-                <ul class="nav float-end r_header_nav">
-                    <li class="nav-item">
-                      <a class="nav-link active text-warning" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Our Plans</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Tools and Resources</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link position-relative r_userlink pe-0" href="#"><span class="d-inline-block r_circle position-absolute top-50" style="left: -10px;"></span> Nidhi Bokadiya <i class="fa fa-chevron-down"></i></a>
-                    </li>
-                </ul>
-                
+        <div class="container-fluid p-0 r_cont ps-5 pe-5">
+            <header class="ps-5 pe-5">
+                <nav class="navbar navbar-expand-lg pt-0">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img class="img-fluid" src="./img/Ideal-logo-07.png" alt="">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse flt_end navbar-collapse row m-0" id="navbarNav">
+                            <ul class="r_tbdr navbar-nav r_header_nav float-end p-0 col-12 col-sm-12 col-md-12 col-lg-8">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Our Plans</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Tools &amp; Resources</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white r_userlink pe-0 position-relative" href="#">
+                                        <span class="r_circle d-inline-block position-absolute top-50" style="left: 5px;"></span>
+                                        <span class="ps-3">Nidhi Bokadiya <i class="fa fa-chevron-down"></i></span>
+                                    </a>
+                                    <ul class="nav flex-column r_log text-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <strong>Status :</strong>
+                                                <span>Online</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Account Setting</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Feedback</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Logout</a>
+                                        </li>
+                                        <div class="d1"></div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>                
             </header>
-            <main class="text-white p-5 r_tbdr">
+            <main class="text-white p-5">
                 <h2>Welcome Nidhi Bokadiya!</h2>
                 <h4>How can we help you?</h4>
-                
                 <p>Get started with ideal to manage your projects, clients and stakeholders</p>
                 <div class="row m-0">
-                    <div class="col-12 col-sm-3 r_tbdr">
-                        <div class="rounded rounded-3 r_panel r_panel1">
+                    <div class="col-12 col-sm-3">
+                        <div class="rounded rounded-3 r_panel">
                             <div class="row m-0 p-4">
                                 <div class="col-4 p-0">
                                     <img class="img-fluid" src="./img/launch-1.svg" alt="">
@@ -77,13 +119,15 @@
                                     <img class="img-fluid pt-0" src="./img/Clouds.svg" alt="">
                                 </div>
                                 <h5 class="p-0 mb-5">InnovEx Decision Hub</h5>
-                                <div class="r_panel_c r_tbdr">A</div>
-                                <a class="text-end pt-1" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
+                                <div class="r_panel_c p-2">
+                                    <img class="img-fluid" src="./img/e1.png" alt="">
+                                </div>
+                                <a class="l_mbtn text-end text-white pt-1" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 r_tbdr">
-                        <div class="rounded rounded-3 r_panel r_panel2">
+                    <div class="col-12 col-sm-3">
+                        <div class="rounded rounded-3 r_panel">
                             <div class="row m-0 p-4">
                                 <div class="col-4 p-0">
                                     <img class="img-fluid" src="./img/layout(1)-1.svg" alt="">
@@ -92,13 +136,15 @@
                                     <img class="img-fluid pt-0" src="./img/Pattern.svg" alt="">
                                 </div>
                                 <h5 class="p-0">MarketPlace Vistas & Decision Hub (MVDH)</h5>
-                                <div class="r_panel_c r_tbdr">A</div>
-                                <a class="text-end pt-1" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
+                                <div class="r_panel_c">
+                                    <img class="img-fluid" src="./img/e2.png" alt="">
+                                </div>
+                                <a class="l_mbtn text-end text-white pt-1" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 r_tbdr">
-                        <div class="rounded rounded-3 r_panel r_panel3">
+                    <div class="col-12 col-sm-3">
+                        <div class="rounded rounded-3 r_panel">
                             <div class="row m-0 p-4">
                                 <div class="col-4 p-0">
                                     <img class="img-fluid" src="./img/launch-1.svg" alt="">
@@ -107,13 +153,15 @@
                                     <img class="img-fluid pt-0" src="./img/Clouds.svg" alt="">
                                 </div>
                                 <h5 class="p-0 mb-5">SustainX Decision Hub</h5>
-                                <div class="r_panel_c r_tbdr">A</div>
-                                <a class="text-end pt-1" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
+                                <div class="r_panel_c">
+                                    <img class="img-fluid" src="./img/e3.png" alt="">
+                                </div>
+                                <a class="l_mbtn text-end text-white pt-1" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 r_tbdr">
-                        <div class="rounded rounded-3 r_panel r_panel4">
+                    <div class="col-12 col-sm-3">
+                        <div class="rounded rounded-3 r_panel">
                             <div class="row m-0 p-4">
                                 <div class="col-4 p-0">
                                     <img class="img-fluid" src="./img/layout(1)-1.svg" alt="">
@@ -122,8 +170,10 @@
                                     <img class="img-fluid pt-0" src="./img/Pattern.svg" alt="">
                                 </div>
                                 <h5 class="p-0">Agile ResearchOps & Knowledge Hub (ARKH)</h5>
-                                <div class="r_panel_c r_tbdr">A</div>
-                                <a class="text-end pt-1" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
+                                <div class="r_panel_c">
+                                    <img class="img-fluid" src="./img/e4.png" alt="">
+                                </div>
+                                <a class="l_mbtn text-end text-white pt-1" href="#">Learn more <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +230,7 @@
                         <div class="clearfix"></div>
                         <ul class="nav float-end">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Terms of Serice</a>
+                                <a class="nav-link" href="#">Terms of Service</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Privacy Policy</a>

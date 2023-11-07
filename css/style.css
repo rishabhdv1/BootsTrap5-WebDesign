@@ -3,18 +3,14 @@ body{
     background-image: url("../img/Group495.svg") , url("../img/refrence/background.png");
     background-repeat: no-repeat;
     background-size: 15%, 100%;
-    background-position: 50px 600px , left top;
+    background-position: 50px 550px , left top;
 }
 ul{
     list-style: none;
 }
-a{
-    text-decoration: none;
-    color: #fff !important;
-}
-/* .r_tbdr{
+.r_tbdr{
     border: 1px dashed red;
-} */
+}
 header{
     height: 130px;
 }
@@ -28,7 +24,7 @@ footer{
     height: 320px;
 }
 .r_header_nav > li > a{
-    padding: 61px 32px 20px 32px;
+    padding: 61px 32px 20px 32px !important;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -53,4 +49,48 @@ footer *{
 }
 footer h3{
     font-family: 'NunitoBold', sans-serif;
+}
+/* -- ------------ card start ------------- -- */
+.r_panel{
+    height: 220px;
+    background: #424D83;
+    position: relative;
+    transition: all 1s linear;
+}
+.r_panel:hover{
+    height: 445px;
+    background: #798ce7;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.r_panel:hover .r_panel_c{
+    opacity: 1;
+    visibility: visible;
+}
+.r_panel_c{
+    /* transition: property duration timing-function delay|initial|inherit; */
+    transition: all .2s linear .2s;
+    background: #5264bb;
+    opacity: 0;
+    visibility: hidden;
+    /* display: none; */
+}
+.r_panel > div > .l_mbtn{
+    position: absolute ;
+    bottom: 20px;
+    left: -15px;
+}
+/* -- ------------------ card end ------------ -- */
+
+
+@media only screen and (max-width:992px) {
+    .r_header_nav{
+        background: #573a70;
+    }
+    .r_header_nav >li > a{
+        padding-top: 30px !important;
+        border-bottom: 1px solid #744c97;
+        border-radius: 0;
+
+    }
 }
