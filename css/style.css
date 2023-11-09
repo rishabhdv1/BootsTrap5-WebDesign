@@ -12,7 +12,7 @@ ul{
     border: 1px dashed red;
 }
 header{
-    height: 130px;
+    min-height: 130px;
 }
 .active{
     background: #573a70;
