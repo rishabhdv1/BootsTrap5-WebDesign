@@ -1,6 +1,6 @@
 body{
     background: #F3F3F3;
-    background-image: url("../img/Group495.svg") , url("../img/refrence/background3.png");
+    background-image: url("../img/Group495.svg") , url("../img/refrence/background1.png");
     background-repeat: no-repeat;
     background-size: 15%, 100%;
     background-position: 50px 700px , left top;
@@ -14,8 +14,13 @@ ul{
 header{
     min-height: 130px;
 }
+.r_header_nav > li > a:hover{
+    background: #573a70;
+    color: #ffb900 !important;
+}
 .active{
     background: #573a70;
+    color: #ffb900 !important;
 }
 
 .flt_end{
@@ -93,7 +98,7 @@ footer h3{
     height: 220px;
     background: #424D83;
     position: relative;
-    transition: all 1s linear;
+    transition: all 1s ease-in;
 }
 .r_panel:hover{
     height: 445px;
@@ -121,6 +126,11 @@ footer h3{
 /* -- ------------------ card end ------------ -- */
 
 
+@media only screen and (max-width:576px) {
+    .r_sm_text{
+        color: #414062;
+    }
+}
 @media only screen and (max-width:992px) {
     .r_header_nav{
         background: #573a70;

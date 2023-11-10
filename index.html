@@ -10,31 +10,36 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <title>BootsTrap5 WebDesigns</title>
+        <title>IDEAL WebDesign BS5</title>
     </head>
     <style>
-        @media only screen and (max-width:576px) {
-            .r_sm_text{
-                color: #414062;
-            }
+        header .dropdown-menu a:hover{
+            background: #ffb900;
         }
-        
+        /* @media screen and (max-width:576px) {
+            .r_header_nav > li:last-child{
+                height: 75px;
+            }
+        } */
+        .r_footer_nav a:hover{
+            text-decoration: underline;
+        }
     </style>
     <body>
         <div class="container p-0 r_cont">
             <header>
-                <nav class="navbar navbar-expand-lg pt-0">
+                <nav class="navbar navbar-expand-lg pt-0 p-4">
                     <div class="container-fluid p-0">
                       <a id="viewButton" class="navbar-brand" href="#">
                         <img class="img-fluid" src="./img/Ideal-logo-07.png" alt="">
                       </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                      <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars text-white"></i>
                       </button>
                         <div class="collapse flt_end navbar-collapse row m-0" id="navbarNav">
-                            <ul class="navbar-nav r_header_nav float-end p-0 col-12 col-sm-12 col-md-12 col-lg-8">
+                            <ul class="navbar-nav r_header_nav float-end p-0 col-12 col-sm-12 col-md-12 col-lg-8" style="margin-right: -30px;">
                                 <li class="nav-item">
-                                    <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#">Services</a>
@@ -45,8 +50,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#">Tools &amp; Resources</a>
                                 </li>
-                                <li class="nav-item dropdown z-3">
-                                    <span class="r_circle d-inline-block position-absolute top-50" style="left: 5px; z-index: 100;"></span>
+                                <li class="nav-item dropdown">
+                                    <span class="r_circle d-inline-block position-absolute top-50 d-none d-sm-none d-xl-block d-xxl-block" style="left: 5px; z-index: 100;"></span>
                                     <a class="nav-link text-white r_userlink pe-0 position-relative" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#">
                                         <span class="ps-3">Nidhi Bokadiya <i class="fa fa-chevron-down"></i></span>
                                     </a>
@@ -83,7 +88,7 @@
                         <div class="rounded rounded-3 r_panel">
                             <div class="row m-0 p-4">
                                 <div class="col-4 p-0">
-                                    <img class="img-fluid" src="./img/launch-1.svg" alt="">
+                                    <img class="img-fluid" src="./img/Icon.svg" alt="">
                                 </div>
                                 <div class="col-8 p-0">
                                     <img class="img-fluid pt-0" src="./img/Clouds.svg" alt="">
@@ -100,7 +105,7 @@
                         <div class="rounded rounded-3 r_panel">
                             <div class="row m-0 p-4">
                                 <div class="col-4 p-0">
-                                    <img class="img-fluid" src="./img/layout(1)-1.svg" alt="">
+                                    <img class="img-fluid" src="./img/Group130.svg" alt="">
                                 </div>
                                 <div class="col-8 p-0">
                                     <img class="img-fluid pt-0" src="./img/Pattern.svg" alt="">
@@ -117,7 +122,7 @@
                         <div class="rounded rounded-3 r_panel">
                             <div class="row m-0 p-4">
                                 <div class="col-4 p-0">
-                                    <img class="img-fluid" src="./img/launch-1.svg" alt="">
+                                    <img class="img-fluid" src="./img/Icon.svg" alt="">
                                 </div>
                                 <div class="col-8 p-0">
                                     <img class="img-fluid pt-0" src="./img/Clouds.svg" alt="">
@@ -134,7 +139,7 @@
                         <div class="rounded rounded-3 r_panel">
                             <div class="row m-0 p-4">
                                 <div class="col-4 p-0">
-                                    <img class="img-fluid" src="./img/layout(1)-1.svg" alt="">
+                                    <img class="img-fluid" src="./img/Group130.svg" alt="">
                                 </div>
                                 <div class="col-8 p-0">
                                     <img class="img-fluid pt-0" src="./img/Pattern.svg" alt="">
@@ -149,11 +154,11 @@
                     </div>
                 </div>
             </main>
-            <footer class="p-5 mt-5 ">
-                <div class="row m-0">
+            <footer class="p-5 mt-5">
+                <div class="row m-0 pt-5 mt-5">
                     <div class="col-5 p-0">
                         <h4 class="fw-bold">Features</h4>
-                        <ul class="p-0 nav">
+                        <ul class="p-0 nav r_footer_nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Beginner Guide</a>
                             </li>
@@ -165,7 +170,7 @@
                     </div>
                     <div class="col-7 p-0">
                         <h4 class="fw-bold">Support</h4>
-                        <ul class="nav">
+                        <ul class="nav r_footer_nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Help Center</a>
                             </li>
@@ -198,7 +203,7 @@
                             </li>
                         </ul>
                         <div class="clearfix"></div>
-                        <ul class="nav float-end">
+                        <ul class="nav float-end r_footer_nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Terms of Service</a>
                             </li>
@@ -210,7 +215,16 @@
                 </div>
             </footer>
         </div>
-
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script>
+            (function($){
+                // alert('ok');
+                $('.r_header_nav > li > a').click(function(){
+                    $('.active').removeClass('active')
+                    $(this).addClass('active');
+                });
+            })(jQuery);
+        </script>
     </body>
 </html>
